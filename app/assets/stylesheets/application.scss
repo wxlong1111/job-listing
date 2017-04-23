@@ -115,6 +115,16 @@
   font-size: 12px;
 }
 
+html {
+   position: relative;
+   min-height: 100%;
+ }
+
+ body {
+   /* Margin bottom by footer height */
+   margin-bottom: 100px;
+ }
+
 //---------Navbar---------
 
  .navbar-default {
@@ -251,14 +261,20 @@
 
 //---------Footer---------
 
-footer {
-    color: white;
-}
-
-footer .footer-below {
-    padding: 25px 0;
+ .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 100px;
     background-color: #233140;
-}
+
+    p {
+      color: white;
+      margin-top: 30px;
+    }
+  }
+
 
 .caption {
   margin: 30px;
